@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Program Penurun Berat Badan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Program Penurun Berat Badan</h1>
+    <form action="hitung.php" method="POST">
+      <label
+        >Tinggi Badan (cm): <input type="text" name="tinggi_badan"
+      /></label>
+      <label>Berat Badan (kg): <input type="text" name="berat_badan" /></label>
+      <label>Usia: <input type="text" name="usia" /></label>
+      <label
+        >Jenis Kelamin:
+        <input type="radio" name="jenis_kelamin" value="Laki-laki" /> Laki-laki
+        <input type="radio" name="jenis_kelamin" value="Perempuan" /> Perempuan
+      </label>
+      <label
+        >Aktivitas Fisik:
+        <select name="aktivitas_fisik">
+          <option value="1.2">Sangat Sedikit Aktivitas Fisik</option>
+          <option value="1.375">Sedikit Aktivitas Fisik</option>
+          <option value="1.55">Aktivitas Fisik Sedang</option>
+          <option value="1.725">Aktivitas Fisik Tinggi</option>
+          <option value="1.9">Aktivitas Fisik Sangat Tinggi</option>
+        </select>
+      </label>
+      <input type="submit" value="Hitung" />
+    </form>
+  </body>
+</html>
